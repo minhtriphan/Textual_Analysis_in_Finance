@@ -18,4 +18,5 @@ This is the git repo for the Textual Analysis in Finance lecture at the Universi
 
 # Detailed contents
 ## Week 1 - Course overview, Bag-of-Words
-
+* Code: Utility functions, currently include all cleaning functions
+* Data: NVIDIA's earnings call transcripts from 2019 to 2024.
