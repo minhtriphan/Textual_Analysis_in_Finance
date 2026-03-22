@@ -1,11 +1,16 @@
-import re
+
 from typing import Optional, List
-
+# To remove special characters
+import re
+# To fix contractions
 import contractions    # Don't forget to install it via `pip install contractions`
-
+# To remove stopwords
 import nltk
 from nltk.corpus import stopwords
 nltk.download('stopwords')
+# To lemmatize
+import spacy
+LEMMATIZER = spacy.load('en_core_web_sm')
 
 def readfile(f: str) -> str:
     '''
@@ -70,3 +75,15 @@ def stopword_removal(txt: str, stopword_list: List = stopwords.words('english'),
     else:
         _stopword_list = stopword_list
     return ' '.join([word for word in txt.split() if word not in _stopword_list])
+
+def lemmatization(txt: str) -> str:
+    '''
+    This function lemmatizes the text, this should be the final step in the normalization pipeline
+    Args:
+      txt (str): The text after lowercasing, fixing contractions, removing special characters, and stopwords
+    Output:
+      - The clean text
+    '''
+    doc = LEMMATIZER(txt)
+    lemmatized_tokens = [token.lemma_ for token in doc]
+    return ' '.join(lemmatized_tokens)
