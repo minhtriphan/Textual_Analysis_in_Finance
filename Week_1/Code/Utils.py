@@ -1,3 +1,8 @@
+# Install the 'contractions' package
+import subprocess
+import sys
+package_name = 'contractions'
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', package_name])
 
 from typing import Optional, List
 # To remove special characters
@@ -49,7 +54,7 @@ def special_character_removal(txt: str, keep: Optional[str] = None, remove_numbe
     Args:
       - txt (str): The text (could be after lowercasing).
       - keep (str): A string storing punctuations to keep. For example: ',.()'. Default: None, which means exclude all punctuations.
-      - remove_number (bool): Whether remove numbers or not.
+      - remove_number (bool): Whether remove numbers or not. Default: False.
     Output:
       - The text after removing punctations.
     '''
@@ -66,7 +71,7 @@ def stopword_removal(txt: str, stopword_list: List = stopwords.words('english'),
     Args:
       - txt (str): The text after lowercasing and removing special characters.
       - stopword_list (list): A list of pre-defined stopwords.
-      - remove_single_letters (bool): Whether to remove single letters, such as a, b, c, etc., or not. Default is False.
+      - remove_single_letters (bool): Whether to remove single letters, such as a, b, c, etc., or not. Default: False.
     Output:
       - The text after removing stopwords.
     '''
