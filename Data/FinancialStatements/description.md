@@ -5,7 +5,7 @@ The US Securities and Exchange Commission requires all listed firms, i.e., all f
 The annual statement, which is the financial statements after every fiscal year, is called a _10-K file_, while the quarterly version is called a _10-Q file_.
 
 Depending on the size, firms have different deadline to submit it. The market is quite sensitive to a delay, as it usually hints a high legal risk. 
-A striking example recently was Super Micro Computer, Inc. (NASDAQ: SMCI) in 2024 ((Source)[https://www.reuters.com/technology/super-micro-computer-delay-annual-filing-2024-08-28/])
+A striking example recently was Super Micro Computer, Inc. (NASDAQ: SMCI) in 2024 ([Source](https://www.reuters.com/technology/super-micro-computer-delay-annual-filing-2024-08-28/))
 
 A 10-K file's key contents include:
 * Business Summary (Item 1): Overview of operations, products, services, and market.
@@ -27,10 +27,10 @@ There are several stylized facts of 10-K and 10-Q files
 * Standardized language
 * Most-read sections: MD&A (Item 7) and Risk Factors (Item 1A)
 * Contents hardly change. The similarity between the 10-K files of a firm in two consecutive years is very high
-* Contain predictive information to stock markets via manager's sentiment, as shown by (Loughran and McDonald 2011)[https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.2010.01625.x] and [Jiang, et al. (2019)](https://www.sciencedirect.com/science/article/pii/S0304405X18302770)
+* Contain predictive information to stock markets via manager's sentiment, as shown by [Loughran and McDonald 2011](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1540-6261.2010.01625.x) and [Jiang, et al. (2019)](https://www.sciencedirect.com/science/article/pii/S0304405X18302770)
 
 # How to get the data
-* (SEC API)[https://sec-api.io/]
-* Shared Google folder of Loughran and McDonald ((here)[https://drive.google.com/drive/folders/1tZP9A0hrAj8ptNP3VE9weYZ3WDn9jHic])
+* [SEC API](https://sec-api.io/)
+* Shared Google folder of Loughran and McDonald ([here](https://drive.google.com/drive/folders/1tZP9A0hrAj8ptNP3VE9weYZ3WDn9jHic))
 * (In this course) The 10-K files of Tesla in 2024 and 2025
 
