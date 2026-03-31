@@ -19,7 +19,7 @@ This is the git repo for the Textual Analysis in Finance lecture at the Universi
 # Data description
 All necessary datasets are given in the Data folder, which includes:
 * `Transcripts` - NVIDIA transcripts from 2020 to 2025 (fiscal) - Obtained from [FMP API](https://site.financialmodelingprep.com/developer/docs)
-* TSLA financial statements (to be updated) - Extracted from [Loughran-McDonald shared folder](https://drive.google.com/drive/folders/1tZP9A0hrAj8ptNP3VE9weYZ3WDn9jHic?usp=drive_link)
+* `FinancialStatements` - TSLA financial statements - Obtained from [Loughran-McDonald shared folder](https://drive.google.com/drive/folders/1tZP9A0hrAj8ptNP3VE9weYZ3WDn9jHic?usp=drive_link)
 * `CentralBankerSpeeches` - Central bankers' speeches - Downloaded from [BIS website](https://www.bis.org/cbspeeches/index.htm)
 
 # Detailed contents and remarks
@@ -36,5 +36,8 @@ pip install wordcloud
 ```
 
 ## Week 2 - Sentiment analysis and topic modeling
-* Code:
+* Code: No additional code
 * Data: Financial Phrasebank and central bankers' speeches
+
+## Week 3 - Neural embedding
+
