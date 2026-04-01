@@ -36,8 +36,9 @@ pip install wordcloud
 ```
 
 ## Week 2 - Sentiment analysis and topic modeling
-* Code: No additional code
+* Code: A class to vectorize texts using Bag-of-Words and TF-IDF
 * Data: Financial Phrasebank and central bankers' speeches
 
 ## Week 3 - Neural embedding
-
+* Code: Training ELMo (to be updated)
+* Data: Tesla's 10-K files in 2024 and 2025 for Word2Vec; Financial Phrasebank for sentiment analysis using Doc2Vec
