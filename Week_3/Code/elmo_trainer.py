@@ -1,4 +1,5 @@
 from typing import List, Dict
+from tqdm.auto import tqdm
 
 import torch
 from torch.utils.data import DataLoader
@@ -17,12 +18,12 @@ class Trainer():
 
     def _prepare_dataset(self, filenames: List[str]):
         return ELMoDataset(filenames = filenames, vocab = self.vocab)
-    
+
     def _prepare_dataloader(self, dataset):
         return DataLoader(
-            dataset, 
-            batch_size = self.config.batch_size, 
-            num_workers = self.config.num_workers, 
+            dataset,
+            batch_size = self.config.batch_size,
+            num_workers = self.config.num_workers,
             collate_fn = Collator(self.config.max_length, padding = 'max_length', truncation = True)
         )
 
@@ -52,7 +53,7 @@ class Trainer():
         # Prepare the optimizer
         optimizer = self._prepare_optimizer(model)
 
-        for epoch in range(self.config.nepochs):
+        for epoch in tqdm(range(self.config.nepochs)):
             total_loss = 0
             for batch in dataloader:
                 logits, pooled_output, loss = model(batch['input_ids'], attention_mask = batch['attention_mask'])
@@ -63,7 +64,7 @@ class Trainer():
                 total_loss += loss.item()
 
             print(f'Epoch {epoch}: {total_loss:.2f}')
-        
+
         self.model = model    # After training, save the model as an attribute of the Trainer. NOTICE: This line of code will NOT save the model to hard drive!!!
 
     def infer(self, text):

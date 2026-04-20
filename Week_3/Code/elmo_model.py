@@ -29,7 +29,6 @@ class ELMo(nn.Module):
         self.output = nn.Linear(hidden_size * 2, vocab_size)    # hidden_size * 2 is because of the Bi-LSTM
 
     def pooler(self, logits, attention_mask = None):
-        print(attention_mask, attention_mask is not None)
         if attention_mask is not None:
             return (logits * attention_mask.unsqueeze(-1)).sum(dim = 1) / attention_mask.sum(dim = 1, keepdim = True)
         else:
@@ -57,7 +56,7 @@ class ELMo(nn.Module):
         )
 
         return loss_f + loss_b
-    
+
     def forward(self, input_ids: torch.Tensor, attention_mask: Union[torch.Tensor, None] = None):
         # Embed the input_ids
         embedding = self.embedding(input_ids)

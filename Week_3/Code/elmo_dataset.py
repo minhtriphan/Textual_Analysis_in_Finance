@@ -7,8 +7,8 @@ from Week_3.Code.elmo_utils import text_normalization
 
 class ELMoDataset(Dataset):
     def __init__(
-        self, 
-        filenames: List[str], 
+        self,
+        filenames: List[str],
         vocab: Dict
     ):
         self.filenames = filenames
@@ -26,7 +26,7 @@ class ELMoDataset(Dataset):
 
         # Sample only ONE sentence at a time
         sentence = random.choice(sentences)
-        
+
         # Tokenize the sentence
         sentence = sentence.split()
 
@@ -39,7 +39,7 @@ class ELMoDataset(Dataset):
             else:
                 token_id = self.vocab['<unk>']
             token_ids.append(token_id)
-        
+
         return token_ids
 
 class Collator():
@@ -58,7 +58,7 @@ class Collator():
             # Now we generate the mask and pad
             attention_mask = [1] * len(token_ids) + [0] * (self.max_len - len(token_ids))
             token_ids = token_ids + [0] * (self.max_len - len(token_ids))    # 0 is the padding token <pad>
-            
+
         else:
             # Now, we generate the mask and truncate
             attention_mask = [1] * self.max_len
@@ -73,7 +73,7 @@ class Collator():
             item_token_ids, item_attention_mask = self._pad_or_truncate(item_token_ids)
             token_ids.append(item_token_ids)
             attention_mask.append(item_attention_mask)
-        
+
         return {
             'input_ids': torch.tensor(token_ids, dtype = torch.long),
             'attention_mask': torch.tensor(attention_mask, dtype = torch.long)
