@@ -16,6 +16,11 @@ This is the git repo for the Textual Analysis in Finance lecture at the Universi
 * Week 5 - Large language models
 * Week 6 - Retrieval-augmented generation, feedback, guest lecture
 
+# Assignment
+The assignment is in the structure of a Kaggle competition, where students have to develop models to detect paragraphs about hedging activities of firms using derivatives.
+
+Details on the assignment can be found [**here**](https://www.kaggle.com/competitions/textual-analysis-in-finance-mid-term-assignment)
+
 # Data description
 All necessary datasets are given in the Data folder, which includes:
 * `Transcripts` - NVIDIA transcripts from 2020 to 2025 (fiscal) - Obtained from [FMP API](https://site.financialmodelingprep.com/developer/docs)
@@ -38,7 +43,7 @@ pip install wordcloud
 ## Week 2 - Sentiment analysis and topic modeling
 * Code: A class to vectorize texts using Bag-of-Words and TF-IDF
 * Data: Financial Phrasebank and central bankers' speeches
-* Notice: 
+* Notice:
 
 In this week, we need a package for dictionary-based sentiment analysis, so-called `pysentiment2`. Install it by `pip install pysentiment2`
 
