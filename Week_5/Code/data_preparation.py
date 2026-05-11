@@ -48,7 +48,7 @@ def _organize_dataset_each_transcript(transcript: str, fiscal_year: int, fiscal_
             'instruction': instruct,
             'output': f'The following paragraph is the {i}-th paragraph of their discussion:\n{para}'
         }
-        each_input_pair['text'] = f'<s>[INST] {each_input_pair["instruct"]}[/INST]{each_input_pair["output"]}</s>'
+        each_input_pair['text'] = f'<s>[INST] {each_input_pair["instruction"]}[/INST]{each_input_pair["output"]}</s>'
         items.append(each_input_pair)
     return items
 
