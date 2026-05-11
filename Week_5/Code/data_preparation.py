@@ -48,10 +48,11 @@ def _organize_dataset_each_transcript(transcript: str, fiscal_year: int, fiscal_
             'instruction': instruct,
             'output': f'The following paragraph is the {i}-th paragraph of their discussion:\n{para}'
         }
+        each_input_pair['text'] = f'<s>[INST] {each_input_pair["instruct"]}[/INST]{}</s>{each_input_pair["output"]}'
         items.append(each_input_pair)
     return items
 
-def _organize_dataset(data_dir: str):
+def organize_dataset(data_dir: str):
     '''
     This function organizes the transcripts' contents in the HuggingFace dataset to suit the input for fine-tuning an LLM
     '''
