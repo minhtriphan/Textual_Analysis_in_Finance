@@ -52,5 +52,13 @@ In this week, we need a package for dictionary-based sentiment analysis, so-call
 * Data: Tesla's 10-K files in from 2016 to 2025 for Word2Vec and Doc2Vec
 
 ## Week 4 - Language models
-* Code: Fine-tuning FinBERT for sentiment analysis using Financial Phrasebank (to be updated)
-* Data: Financial Phrasebank
+* Code: Deep dive in FinBERT tokenizer, configuration, and model; using FinBERT for sentiment analysis
+* Data: NVIDIA's transcripts
+
+## Week 5 - Large Language models
+* Code: (tbd)
+* Data: (tbd)
+
+## Week 6 - Retrieval-Augmented Generation
+* Code: (tbd)
+* Data: (tbd)
