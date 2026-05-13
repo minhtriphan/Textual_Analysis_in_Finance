@@ -55,10 +55,10 @@ In this week, we need a package for dictionary-based sentiment analysis, so-call
 * Code: Deep dive in FinBERT tokenizer, configuration, and model; using FinBERT for sentiment analysis
 * Data: NVIDIA's transcripts
 
-## Week 5 - Large Language models
-* Code: (tbd)
-* Data: (tbd)
+## Week 5 - Large language models
+* Code: Text generation with LLMs
+* Data: No data involved
 
-## Week 6 - Retrieval-Augmented Generation
-* Code: (tbd)
-* Data: (tbd)
+## Week 6 - Post-training adaptation
+* Code: Fine-tuning an LLM (Qwen-1.5B) with NVIDIA's transcripts
+* Data: NVIDIA's transcripts
