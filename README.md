@@ -21,6 +21,11 @@ The assignment is in the structure of a Kaggle competition, where students have 
 
 Details on the assignment can be found [**here**](https://www.kaggle.com/competitions/textual-analysis-in-finance-mid-term-assignment)
 
+# Final project
+The final project examines how textual features extracted from financial documents influence stock market behavior. 
+
+Students are asked to analyze the financial text data, then connect extracted textual features with real activities in the stock market.
+
 # Data description
 All necessary datasets are given in the Data folder, which includes:
 * `Transcripts` - NVIDIA transcripts from 2020 to 2025 (fiscal) - Obtained from [FMP API](https://site.financialmodelingprep.com/developer/docs)
