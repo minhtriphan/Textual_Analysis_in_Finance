@@ -43,9 +43,7 @@ pip install wordcloud
 ## Week 2 - Sentiment analysis and topic modeling
 * Code: A class to vectorize texts using Bag-of-Words and TF-IDF
 * Data: Financial Phrasebank and central bankers' speeches
-* Notice:
-
-In this week, we need a package for dictionary-based sentiment analysis, so-called `pysentiment2`. Install it by `pip install pysentiment2`
+* Notice: In this week, we need a package for dictionary-based sentiment analysis, so-called `pysentiment2`. Install it by `pip install pysentiment2`
 
 ## Week 3 - Neural embedding
 * Code: Training/Inferring using ELMo
@@ -60,5 +58,11 @@ In this week, we need a package for dictionary-based sentiment analysis, so-call
 * Data: No data involved
 
 ## Week 6 - Post-training adaptation
-* Code: Fine-tuning an LLM (Qwen-1.5B) with NVIDIA's transcripts
+* Code: Fine-tuning an LLM (Qwen-1.5B) and designing a RAG with NVIDIA's transcripts
 * Data: NVIDIA's transcripts
+* Notice: To implement a RAG system, we need to install the `faiss-cpu` package. Install it by `pip install faiss-cpu`
+
+# Guest lecture
+The lecture has an honor to welcome [**Park Taejin**](https://www.bis.org/author/taejin_park.htm), Head of Financial Markets Research Support, Bank of International Settlements, as the guest lecture.
+
+Mr. Park delivers a lecture on AI applications in economic and financial research.
