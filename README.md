@@ -14,7 +14,7 @@ This is the git repo for the Textual Analysis in Finance lecture at the Universi
 * Week 3 - Neural embedding
 * Week 4 - Language models
 * Week 5 - Large language models
-* Week 6 - Retrieval-augmented generation, feedback, guest lecture
+* Week 6 - Post-training adaptation, feedback, guest lecture
 
 # Assignment
 The assignment is in the structure of a Kaggle competition, where students have to develop models to detect paragraphs about hedging activities of firms using derivatives.
