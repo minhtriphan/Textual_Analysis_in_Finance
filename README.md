@@ -22,7 +22,7 @@ The assignment is in the structure of a Kaggle competition, where students have 
 Details on the assignment can be found [**here**](https://www.kaggle.com/competitions/textual-analysis-in-finance-mid-term-assignment)
 
 # Final project
-The final project examines how textual features extracted from financial documents influence stock market behavior. 
+The final project examines how textual features extracted from financial documents influence stock market behavior.
 
 Students are asked to analyze the financial text data, then connect extracted textual features with real activities in the stock market.
 
@@ -44,28 +44,34 @@ In Week 1, we need two additional packages named `contractions` and `wordcloud`.
 pip install contractions
 pip install wordcloud
 ```
+* [Notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-1)/[Solution](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-1-solution)
 
 ## Week 2 - Sentiment analysis and topic modeling
 * Code: A class to vectorize texts using Bag-of-Words and TF-IDF
 * Data: Financial Phrasebank and central bankers' speeches
 * Notice: In this week, we need a package for dictionary-based sentiment analysis, so-called `pysentiment2`. Install it by `pip install pysentiment2`
+* [Notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-2)/[Solution](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-2-solution)
 
 ## Week 3 - Neural embedding
 * Code: Training/Inferring using ELMo
 * Data: Tesla's 10-K files in from 2016 to 2025 for Word2Vec and Doc2Vec
+* [Notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-3)/[Solution](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-3-solution)
 
 ## Week 4 - Language models
 * Code: Deep dive in FinBERT tokenizer, configuration, and model; using FinBERT for sentiment analysis
 * Data: NVIDIA's transcripts
+* [Notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-4)/[Solution](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-4-solution)
 
 ## Week 5 - Large language models
 * Code: Text generation with LLMs
 * Data: No data involved
+* [Notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-5)/[Solution](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-5-solution)
 
 ## Week 6 - Post-training adaptation
 * Code: Fine-tuning an LLM (Qwen-1.5B) and designing a RAG with NVIDIA's transcripts
 * Data: NVIDIA's transcripts
 * Notice: To implement a RAG system, we need to install the `faiss-cpu` package. Install it by `pip install faiss-cpu`
+* [Notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-6)/[Solution](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-6-solution)/[RAG notebook](https://www.kaggle.com/code/shinomoriaoshi/textual-analysis-in-finance-week-6-rag)
 
 # Guest lecture
 The lecture has an honor to welcome [**Park Taejin**](https://www.bis.org/author/taejin_park.htm), Head of Financial Markets Research Support, Bank of International Settlements, as the guest lecture.
